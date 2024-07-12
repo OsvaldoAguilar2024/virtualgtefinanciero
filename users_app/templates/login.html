@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    <title><i class="fa fa-registered" aria-hidden="true"></i>Login</title>
+{% endblock title %}
+
+
+
+{% block content %}
+
+<div class="container"> 
+
+    </br>
+
+    <h2> Ingreso</h2>
+
+    <form method="POST" class="mt-5" col-6 >
+        {% csrf_token %}
+        {{form}}
+         <button type "submit" class="btn btn-primary mb-5 ">Login</button>
+    </form>
+
+</div>
+
+{% endblock content %}
+
